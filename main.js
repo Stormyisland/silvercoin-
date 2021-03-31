@@ -34,14 +34,29 @@ class Blockchain{
         this.chain.push(newBlock);
     }
 
-}
+
+
+    isChainValid(){
+        for(let i = 1; i < this.chain.lenght; i++){
+        const currentBlock = this.chain[i];
+        const previousBlock = this.chain[i];
+        
+        if (currentBlock.hash !== currentBlock.calculateHash());{
+            return false;
+            }
+        
+        if(currentBlock.previousHash !== previousBlock.hash){
+        return false;
+         }
+
+    }
+     return true;
+
+
+}}
 
 let silvercoin = new Blockchain();
 silvercoin.addBlock(new Block(1, "03/29/2021", { amount: 4 }));
 silvercoin.addBlock(new Block(2, "03/29/2021", { amount: 10 })); 
 
 console.log(JSON.stringify(silvercoin, null, 4));localStorage
-
-isChainValid(){
-    
-}
