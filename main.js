@@ -42,3 +42,6 @@ silvercoin.addBlock(new Block(2, "03/29/2021", { amount: 10 }));
 
 console.log(JSON.stringify(silvercoin, null, 4));localStorage
 
+isChainValid(){
+    
+}
