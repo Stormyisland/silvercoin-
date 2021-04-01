@@ -28,7 +28,7 @@ class Block{
 class Blockchain{
     constructor(){
         this.chain = [this.createGenesisBlock()];
-        this.difficulty = 4;
+        this.difficulty = 8;
     }
 
     createGenesisBlock(){
@@ -71,14 +71,14 @@ let silvercoin = new Blockchain();
 console.log('Mining Block: 1...Yay!');
 silvercoin.addBlock(new Block(1, "03/29/2021", { amount: 4 }));
 
-console.log('Mining Block: 2...Yay!');
+/*console.log('Mining Block: 2...Yay!');
 silvercoin.addBlock(new Block(2, "03/29/2021", { amount: 10 })); 
 
 console.log('Mining Block: 3... fucken eh Yay!');
 silvercoin.addBlock(new Block(3, "03/29/2021", { amount: 400 }));
 
 console.log('Mining Block: 4...Yay!');
-silvercoin.addBlock(new Block(4, "03/29/2021", { amount: 119 })); 
+silvercoin.addBlock(new Block(4, "03/29/2021", { amount: 119 }));*/ 
 
  // console.log('is blockchain valid? ' + silvercoin.isChainValid());
 //console.log(JSON.stringify(silvercoin, null, 4));localStorage
