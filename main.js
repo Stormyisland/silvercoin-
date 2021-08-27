@@ -8,6 +8,7 @@ class Block{
      this.data=data;
      this.previousHash=previousHash;
      this.hash=this.calculateHash();
+     this.title=data;
      
      this.nonce=0;  
     }
