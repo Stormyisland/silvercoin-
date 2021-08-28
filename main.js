@@ -9,6 +9,7 @@ class Block{
      this.previousHash=previousHash;
      this.hash=this.calculateHash();
      this.title=data;
+     this.lattitude=lattitude;
      
      this.nonce=0;  
     }
